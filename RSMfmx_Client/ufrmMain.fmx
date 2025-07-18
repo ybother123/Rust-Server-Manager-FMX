@@ -3126,6 +3126,10 @@ object frmMain: TfrmMain
         Text = 'Github'
         OnClick = mniGithubClick
       end
+      object mniHostingGuidelines: TMenuItem
+        Text = 'Hosting Guidelines'
+        OnClick = mniHostingGuidelinesClick
+      end
       object mniCheckForUpdate: TMenuItem
         Text = 'Check for Update'
         OnClick = mniCheckForUpdateClick

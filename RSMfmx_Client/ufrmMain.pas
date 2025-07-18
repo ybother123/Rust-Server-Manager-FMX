@@ -314,6 +314,7 @@ type
     mniGithub: TMenuItem;
     wsClientRconICS: TSslWebSocketCli;
     mniCheckForUpdate: TMenuItem;
+    mniHostingGuidelines: TMenuItem;
     procedure btnAdjustAffinityClick(Sender: TObject);
     procedure btnCloseUpdateMessageClick(Sender: TObject);
     procedure btnCopyRconPasswordClick(Sender: TObject);
@@ -397,6 +398,7 @@ type
     procedure wsClientRconICSSocketError(Sender: TObject);
     procedure wsClientRconICSSocksError(Sender: TObject; Error: Integer; Msg: string);
     procedure mniCheckForUpdateClick(Sender: TObject);
+    procedure mniHostingGuidelinesClick(Sender: TObject);
   private
     { Private Const }
   private
@@ -1301,6 +1303,11 @@ end;
 procedure TfrmMain.mniGithubClick(Sender: TObject);
 begin
   OpenURL('https://github.com/AdriaanBoshoff/RSMfmx_v3.1');
+end;
+
+procedure TfrmMain.mniHostingGuidelinesClick(Sender: TObject);
+begin
+  OpenURL('https://facepunch.com/legal/servers');
 end;
 
 procedure TfrmMain.mniOpenServerRootClick(Sender: TObject);
