@@ -315,6 +315,7 @@ type
     wsClientRconICS: TSslWebSocketCli;
     mniCheckForUpdate: TMenuItem;
     mniHostingGuidelines: TMenuItem;
+    mniHelp: TMenuItem;
     procedure btnAdjustAffinityClick(Sender: TObject);
     procedure btnCloseUpdateMessageClick(Sender: TObject);
     procedure btnCopyRconPasswordClick(Sender: TObject);

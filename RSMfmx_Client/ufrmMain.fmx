@@ -3118,21 +3118,28 @@ object frmMain: TfrmMain
           OnClick = mniClearRSMCacheClick
         end
       end
-      object mniDiscord: TMenuItem
-        Text = 'Discord'
-        OnClick = mniDiscordClick
-      end
-      object mniGithub: TMenuItem
-        Text = 'Github'
-        OnClick = mniGithubClick
-      end
-      object mniHostingGuidelines: TMenuItem
-        Text = 'Hosting Guidelines'
-        OnClick = mniHostingGuidelinesClick
-      end
-      object mniCheckForUpdate: TMenuItem
-        Text = 'Check for Update'
-        OnClick = mniCheckForUpdateClick
+      object mniHelp: TMenuItem
+        Text = 'Help'
+        object mniDiscord: TMenuItem
+          Locked = True
+          Text = 'Discord'
+          OnClick = mniDiscordClick
+        end
+        object mniGithub: TMenuItem
+          Locked = True
+          Text = 'Github'
+          OnClick = mniGithubClick
+        end
+        object mniCheckForUpdate: TMenuItem
+          Locked = True
+          Text = 'Check for Update'
+          OnClick = mniCheckForUpdateClick
+        end
+        object mniHostingGuidelines: TMenuItem
+          Locked = True
+          Text = 'Hosting Guidelines'
+          OnClick = mniHostingGuidelinesClick
+        end
       end
     end
     object statMain: TStatusBar
