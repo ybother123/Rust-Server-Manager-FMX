@@ -3415,6 +3415,7 @@ object frmMain: TfrmMain
       TabOrder = 14
       object lblMessage: TSkLabel
         Align = Contents
+        HitTest = True
         Size.Width = 990.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
