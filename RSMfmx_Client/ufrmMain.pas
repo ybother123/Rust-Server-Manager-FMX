@@ -316,6 +316,8 @@ type
     mniCheckForUpdate: TMenuItem;
     mniHostingGuidelines: TMenuItem;
     mniHelp: TMenuItem;
+    pnlMessage: TPanel;
+    lblMessage: TSkLabel;
     procedure btnAdjustAffinityClick(Sender: TObject);
     procedure btnCloseUpdateMessageClick(Sender: TObject);
     procedure btnCopyRconPasswordClick(Sender: TObject);
@@ -400,6 +402,7 @@ type
     procedure wsClientRconICSSocksError(Sender: TObject; Error: Integer; Msg: string);
     procedure mniCheckForUpdateClick(Sender: TObject);
     procedure mniHostingGuidelinesClick(Sender: TObject);
+    procedure lblMessageWords1Click(Sender: TObject);
   private
     { Private Const }
   private
@@ -1168,12 +1171,17 @@ end;
 
 procedure TfrmMain.lblAppVersionValueClick(Sender: TObject);
 begin
-  OpenURL('https://github.com/AdriaanBoshoff/RSMfmx_v3.1/releases');
+  OpenURL('https://github.com/AdriaanBoshoff/Rust-Server-Manager-FMX/releases');
 end;
 
 procedure TfrmMain.lblAppVersionValueResized(Sender: TObject);
 begin
   lytAppVersion.Width := lblAppVersionHeader.Width + 5 + lblAppVersionValue.Width;
+end;
+
+procedure TfrmMain.lblMessageWords1Click(Sender: TObject);
+begin
+  OpenURL('https://github.com/AdriaanBoshoff/Rust-Server-Manager-FMX');
 end;
 
 procedure TfrmMain.lblStatPlayerCountValueResized(Sender: TObject);
