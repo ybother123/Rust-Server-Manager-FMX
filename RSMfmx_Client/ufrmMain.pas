@@ -318,6 +318,7 @@ type
     mniHelp: TMenuItem;
     pnlMessage: TPanel;
     lblMessage: TSkLabel;
+    lstGameModeNone: TListBoxItem;
     procedure btnAdjustAffinityClick(Sender: TObject);
     procedure btnCloseUpdateMessageClick(Sender: TObject);
     procedure btnCopyRconPasswordClick(Sender: TObject);
