@@ -1446,7 +1446,7 @@ object frmMain: TfrmMain
                 object cbbServerMap: TComboBox
                   Align = Left
                   CanFocus = False
-                  ItemIndex = 0
+                  ItemIndex = 1
                   Position.X = 70.000000000000000000
                   Size.Width = 150.000000000000000000
                   Size.Height = 25.000000000000000000
@@ -1454,7 +1454,6 @@ object frmMain: TfrmMain
                   TabOrder = 2
                   OnMouseWheel = cbbServerMapMouseWheel
                   object lstMapProcedural: TListBoxItem
-                    IsSelected = True
                     ItemData.Detail = 'Procedural Map'
                     Size.Width = 19.000000000000000000
                     Size.Height = 19.000000000000000000
@@ -1463,6 +1462,7 @@ object frmMain: TfrmMain
                     Text = 'Procedural Map'
                   end
                   object lstMapBarren: TListBoxItem
+                    IsSelected = True
                     ItemData.Detail = 'Barren'
                     Size.Width = 19.000000000000000000
                     Size.Height = 19.000000000000000000
@@ -1771,6 +1771,7 @@ object frmMain: TfrmMain
                     Text = 'Primitve'
                   end
                   object lstGameModeNone: TListBoxItem
+                    ItemData.Detail = ' '
                     Size.Width = 19.000000000000000000
                     Size.Height = 19.000000000000000000
                     Size.PlatformDefault = False

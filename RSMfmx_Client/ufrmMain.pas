@@ -776,7 +776,9 @@ begin
       slParams.Add('+server.identity "rsm" ^');
 
     // Server Game Mode
-      slParams.Add('+server.gamemode "' + serverConfig.GameMode.GameModeName + '" ^');
+      if not (cbbServerGamemodeValue.Selected = lstGameModeNone) then
+        slParams.Add('+server.gamemode "' + serverConfig.GameMode.GameModeName + '" ^');
+      //slParams.Add('+server.gamemode "' + serverConfig.GameMode.GameModeName + '" ^');
 
     // Server Map
       if not (serverConfig.Map.MapIndex = lstMapCustom.Index) then
